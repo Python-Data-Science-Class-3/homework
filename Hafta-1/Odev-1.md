@@ -1,2 +1,0 @@
-Açıklama
-ahsdhgjas
