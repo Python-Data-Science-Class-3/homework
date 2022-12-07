@@ -1,3 +1,0 @@
-#asdaf
-#asdfasf
-#agfaguhşıojh

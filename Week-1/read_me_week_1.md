@@ -1,1 +1,0 @@
-birinci hafta ödevin açıklamaları
