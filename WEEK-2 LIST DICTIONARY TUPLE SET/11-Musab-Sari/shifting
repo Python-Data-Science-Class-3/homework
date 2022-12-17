@@ -1,0 +1,28 @@
+'''
+Developer   : Musab SARI
+Date        : 13.12.2022
+
+Application : Shifting
+
+Explanation : Shifting is an application where a list is created by the user and in that list, user decides how much the elements in that list shift towards right or left.
+To shift elements towards right, user needs to enter a positive input and to shift left, a negative input is required.
+'''
+
+print('Your list should include at least 2 numbers')
+
+n = list(map(int, input("You can enter your list putting a space between numbers:").split(' '))) #to create list
+print('This is your list:',n)
+
+print('Note:To shift left, input negative')
+
+a = n.copy() #created copy of the list to apply changes on it and equalize indexes with each other
+
+b = int(input("How much do you want to shift:"))        
+
+for i in range(len(n)):
+
+    a[(b + i) % len(n)] = n[i]  
+
+print('Entered list:',n) #to print desired outputs
+
+print('Shifted list:',a)
