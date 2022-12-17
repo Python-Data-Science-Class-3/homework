@@ -1,0 +1,23 @@
+#Write a program that takes in two words as input and returns a list containing three elements,
+# in the following order Shared letters between two words. Letters unique to word 1. Letters 
+# unique to word 2. Each element of the output should have unique letters, and should be 
+# alphabetically sorted. Use set operations. The strings will always be in lowercase and will not 
+# contain any punctuation. Example Input1 sharp Input2 soap Output ['aps', 'hr', 'o']
+#Written by Nuseybe at 15.12.2022
+w1count = {}                                 # empty dictionaries are defining
+w2count = {}                                    
+word1 = input("Input a  word:")            # sentences inputing and making letter lower
+word1 = word1.lower()
+word2 = input("Input a word")
+word2 = word2.lower()
+#print(word1)
+print(f'List of Characters ={tuple(word1)}')
+#print(word2)
+print(f'List of Characters ={tuple(word2)}')
+diff1 = list(set(word1)-set(word2))         # The difference between the letters in word1 and word2
+diff1.sort()
+diff2 = list(set(word2)-set(word1))         # The difference between the letters in word2 and word1
+diff2.sort()
+sim = list(set(word1)&set(word2))           # similar letters between word1 and word2
+sim.sort()
+print("".join(sim),"".join(diff1),"".join(diff2))

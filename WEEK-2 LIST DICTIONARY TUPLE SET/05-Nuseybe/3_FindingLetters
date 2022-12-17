@@ -1,0 +1,17 @@
+#Write a code snippet that inputs a sentence from the user, then uses a dictionary to summarize the number 
+#of occurrences of each letter. Ignore case, ignore blanks and assume the user does not enter any punctuation. 
+# Display a two-column table of the letters and their counts with the letters in sorted order. Example Input 
+# This is a sample text with several words This is more sample text with some different words Output
+#  [('a', 4), ('d', 3), ('e', 10), ('f', 2), ('h', 4), ('i', 7), ('l', 3), ('m', 4), ('n', 1), ('o', 4), ('p', 2), 
+# ('r', 5), ('s', 10), ('t', 9), ('v', 1), ('w', 4), ('x', 2)]
+
+letcount = {}
+for letter in input("Please write a  sentence:"):     #inputing a sentences
+    letter = (letter.lower()).strip                   #changing the sentences letters lowercaps and delete the space
+    #letter = letter.replace(" ","")
+    letcount[letter] = letcount.get (letter, 0) + 1    # seting to up a counter for how many times each letter of the alphabet was used.
+
+print(letcount) 
+letitem = list(letcount.items())                       #Counting occurrences of an element in a list
+letitem.sort()                                         #sorting the list elements
+print(letitem)
