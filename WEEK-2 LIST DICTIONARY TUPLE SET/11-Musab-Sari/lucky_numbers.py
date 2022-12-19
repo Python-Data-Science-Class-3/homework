@@ -9,15 +9,19 @@ Survival process is defined as follows, at the first phase, every second element
 and it goes on like this till there is no possible iteration left.
 '''
 
-n = list([x for x in range(1, int(input('Enter the range of your list:')) + 1)])#to create list 
-
+n = list([x for x in range(1, int(input('Enter the range of your list:')) + 1)])  # to create list 
+# List comprehension ile dongu kurma, liste olusturma basarili.
 print('Your list = ', n)
 
 for i in range(2, len(n)):
     
     if i < len(n):
-        del n[(i - 1)::(i)] 
+        del n[(i - 1)::(i)]
     else:
         break
-
+# Dongu ve algoritma kurma mantigi guzel, gayet basarili
 print('Your lucky numbers = ', n)
+
+'''
+Gayet guzel, okunakli, anlasilir. Tesekkurler...
+'''
