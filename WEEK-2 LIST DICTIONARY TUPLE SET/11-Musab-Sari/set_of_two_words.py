@@ -19,10 +19,10 @@ diffirence2 = (''.join(sorted(list(word_2 - word_1))))
 # difference() ve intersection() set metodlarini da kullanabiliriz.
 
 list_of_outputs[0:3] = shared_letters, diffirence1, diffirence2  # output block
-# outputs = [shared_letters, diffirence1, diffirence2]  
+# outputs = [shared_letters, diffirence1, diffirence2]
 # bu sekilde de farkli turdeki veri yapilarini direk listenin icine gomebilirsin
 print(list_of_outputs)
 
 ''' 
-Cok guzel, tebrikler. 
+Cok guzel, tebrikler.
 '''

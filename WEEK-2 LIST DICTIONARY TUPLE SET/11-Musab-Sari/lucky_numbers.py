@@ -11,9 +11,14 @@ and it goes on like this till there is no possible iteration left.
 
 n = list([x for x in range(1, int(input('Enter the range of your list:')) + 1)])  # to create list 
 # List comprehension ile dongu kurma, liste olusturma basarili.
+# List comprehension liste olarak doner, tekrar list() icine almamiza gerek yok
+# ya da list(range(...)) ile de list comprehension kullanmadan liste olusturabiliriz
 print('Your list = ', n)
 
-for i in range(2, len(n)):
+for i in range(2, len(n)):  
+    # i'yi 2den baslattigimiz ve i-1'deki elemani sildigimiz icin
+    # bazi dongulerde listenin son elemaninin silinebiliyor ve silinmesi gerekiyorken
+    # silinmeden kaliyor. Donguyu ona gore yeniden kurmak gerekiyor 
     
     if i < len(n):
         del n[(i - 1)::(i)]
@@ -23,5 +28,5 @@ for i in range(2, len(n)):
 print('Your lucky numbers = ', n)
 
 '''
-Gayet guzel, okunakli, anlasilir. Tesekkurler...
+guzel, okunakli, anlasilir. Tesekkurler...
 '''
