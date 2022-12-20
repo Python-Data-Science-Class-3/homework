@@ -12,11 +12,34 @@
 
 
 n = int(input("Enter number: "))
-list = [i+1 for i in range(n)]
+list = [i+1 for i in range(n)]  # list, liste olustururken kullandigimiz komuttur, 
+                                # o sebeple variable olustururken list yerine list1, list_1, liste, ...vs
+                                # gibi uygun isimler kullanmaniz daha iyi olur
 print(list)
-x=2
+
+x = 2  # Bu degiskeni hicbir yerde kullanmamissiniz, neden boyle bir degiskene ihtiyac duydunuz?
 for num in range(n):
-    if num>=len(list)-1: #If num is equal to the length of the list, the loop stops
-       break
-    del list[num+1:n:num+2] #indexes are deleted 
-    print(list)
+   if num >= len(list)-1:  # If num is equal to the length of the list, the loop stops
+      break
+   del list[num+1:n:num+2]  # indexes are deleted
+   print(list)  # Sadece son kalan listemizi print ettirsek yeter. Butun asamalari print ettirmeye gerek yok.
+
+'''
+Algoritma basarili.
+
+Dongulerde, if ifadelerinde, icice gecen satirlarda arada birakilan 'indent' diye adlandirilan bosluklari
+dogru hizalamamiz onemli, normalde Shift ile kaydirinca otomatik olarak bir sonraki kademeye gecer ya da
+for veya if satirinin sonundaki : kullanimindan sonra Enter ile alt satira gecerken
+otomatik olarak o boslugu kod derleyici kendi ayarlar.
+PyCharm 4, Spyder, Jupyter Notebook gibi IDE'ler 4 bosluk birakiyor, bu ayarlanabiliyor da.
+VS Code 3 bosluk birakiyor, bu da ayarlaniyordur belki, bilmiyorum. Python standart yaziminda
+syandart 4 bosluktur, ama onemli olan kac bosluk oldugundan ziyade her kademenin hizali olmasidir.
+Aksi takdirde hatali sonuclar olacaktir. Burdaki bir alt kademeye gecis boslugunu buyuk bir listede
+icice gecmis baska bir liste gibi, ya da uzun bir parantezde icte bir parantez daha acmak gibi dusunebilirsiniz.
+Nitekim for dongusunun icindeki print komutunu da dusunursek, bir ust kademeye gectiginde 
+for dongusunden cikmis olup ana kod satiri ile eslesecektir.
+Bu konu ozellikle icice gecen karmasik dongulerde ya da fonksiyonlarda, veya kosullari kullanirken,
+neyi nerde nasil kullanacagimizi gorsel olarak da algilamamizi kolaylastiran ve o sekilde
+kullanilmasi gereken onemli yazim kurallaridir.
+
+'''
