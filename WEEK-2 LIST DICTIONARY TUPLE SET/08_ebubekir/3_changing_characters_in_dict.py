@@ -1,19 +1,24 @@
+3.
 """
-Write a program that takes two inputs;
-one of them is a list and the other is a number,
-and returns the list obtained by shifting the elements
-in the list n places to the right (left) when n is positive (negative).
-Use wrap-around if an element is shifted beyond the end of the list,
-then continue to shift starting at the beginning of the list.
-Example Inputs [1, 2, 3, 4, 5], 2 Output [4, 5, 1, 2, 3] Inputs [1, 2, 3, 4, 5], -2 Output [3, 4, 5, 1, 2]
+Write a code snippet that inputs a sentence from the user,
+then uses a dictionary to summarize the number of occurrences of each letter.
+Ignore case, ignore blanks and assume the user does not enter any punctuation.
+Display a two-column table of the letters and their counts with the letters in sorted order. 
+Example Input This is a sample text with several words 
+This is more sample text with some different words Output
+[('a', 4), ('d', 3), ('e', 10), ('f', 2), ('h', 4), ('i', 7), ('l', 3), ('m', 4),
+ ('n', 1), ('o', 4), ('p', 2), ('r', 5), ('s', 10), ('t', 9), ('v', 1), ('w', 4), ('x', 2)]
 """
-s=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]         #define a list
-n=int(input("what is the number of steps:"))    #input lenght of the list
-f=[]
-for i in range(1,len(s)+1):
-    if i+n<=len(s):
-        f.append(s[i+n-1])
+sentence=input("write a sentence with no spaces between words and no punctuation marks:")
+count_1=dict()
+harf=[]
+for x in sentence:
+    harf.append(x) #
+    if x in count_1:   #1 tane varsa 1 yaz daha fazlaysa say
+        count_1[x]+=1
     else:
-        f.append(s[i-len(s)+n-1])
-print(f)
-
+        count_1[x]=1
+print(count_1)
+count_1.items()   #sozlukteki key ve value degerlerini birlikte almak icin
+list(count_1.items())  #bunlari listeye cevirdik
+print(list(count_1.items()))
