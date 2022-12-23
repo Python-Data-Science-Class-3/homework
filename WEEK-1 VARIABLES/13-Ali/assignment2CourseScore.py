@@ -12,10 +12,12 @@ Surname = input("enter surname: ")
 while True:
     try:
         Snumber = int(eval(input("enter studen number: ")))
-        #len(str(Snumber)) == 7
-        break
+        if len(str(Snumber)) == 7:
+            break
+        else:
+            raise NameError
     except NameError:
-        print("Student Number can only be numaric please enter promptly")
+        print("Student Number can only be 7 digits numaric please enter properly")
 while True:
     try:    
         visaMath = input("enter Math visa grade: ")
