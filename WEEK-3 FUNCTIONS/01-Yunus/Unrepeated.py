@@ -1,24 +1,20 @@
+## 1-unique_list.py
+
+# Write a function that filters all the unique(unrepeated) elements of a given list.
+
+# Example:
+# Function call: unique_list([1,2,3,3,3,3,4,5,5])
+# Output       : [1, 2, 3, 4, 5]
 
 
-
-def unrepeated(x):
+#-----------------Made by Yunus Donmez--------------21/12/2022
+def unrepeated(TheList):
     '''
-This function removes repeated elements from a list
-'''
-    new_set = set(x)
+    a function that filters all the unique(unrepeated) elements of a given list
+    '''
+
+    new_set = set(TheList)     # Turns into a set which automaticaly removes repaeted values
     print(sorted(new_set))
-x = input("Enter a list : ")
-unrepeated(x)
+TheList = input("Enter a something to see its uniq values: ")
+unrepeated(TheList)
 
-'''
-OR
-'''
-
-# def un_repated(x):
-#     for i in range(0,len(x)-1):
-#         for j in range(0,len(x)-1):
-#             if x[i] == x[j] and i != j:
-#                 del x[j]
-#     print(x)
-# x = list(input("Enter a list : \n"))
-# un_repated(x)
