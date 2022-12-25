@@ -12,3 +12,18 @@ def unique_list(list1):
     return list2
 
 print(unique_list([1,2,3,3,3,3,4,5,5]))
+
+'''
+Super. Bir de sort edebiliriz, sanirim soruda istenmemis ama cozumlerde gordum.
+Liste sirali oldugundan bir sorun olmuyor ama karmasik sirada oldugunda
+sirali gormemiz de onemli. Sort kullanarak kodu guncelleyip, 
+farkli listelerle de deneyip test ederseniz guzel olur.
+Asagida ornegini paylastim, kolay gelsin.
+'''
+
+
+'''
+def unrepeated(first_list): 
+    last_list = sorted(set(first_list))
+    return last_list
+'''

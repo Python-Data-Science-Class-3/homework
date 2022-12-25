@@ -20,3 +20,8 @@ def equal_reverse():
     print(result)
 
 equal_reverse()
+
+
+"""
+Gayet guzel, tebrikler.
+"""

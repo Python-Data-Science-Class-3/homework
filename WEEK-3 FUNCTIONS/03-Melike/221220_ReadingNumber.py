@@ -10,7 +10,7 @@ digits = {0: "", 1:"One", 2:"Two", 3:"Three", 4:"Four", 5:"Five", 6:"Six", 7:"Se
 
 def reading_number(num):
     if 99 > num > 19:
-        print(f"{digits[num-num%10]} {digits[num%10]}")         # to find ten_digit of number, the modulus by ten is substracted
+        print(f"{digits[num-num%10]} {digits[num%10]}")  # to find ten_digit of number, the modulus by ten is substracted
     elif num in [14,16,17,18,19]:
         print(f"{digits[num%10]}teen")
     elif num in [10,11,12,13,15]:
@@ -19,4 +19,11 @@ def reading_number(num):
         print("Please input another number..")
     
 
-reading_number(28)
+reading_number(98)
+
+'''
+Algoritma basarili gorunuyor, bunu kullanicidan aldigimiz bir inputu dondurecek sekilde yapalim, 
+bizden istenen bu sekilde.
+
+99'u da kucuk esit ile dahil edelim, o da iki basamakli sayi sonucta.
+'''

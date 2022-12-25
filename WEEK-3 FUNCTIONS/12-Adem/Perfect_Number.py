@@ -9,3 +9,8 @@ print('Perfect numbers between 1 and 1000:', list(perfect_numbers))
 
 from functools import reduce
 print('Sum of perfect numbers between 1 and 1000:', reduce(lambda x, y: x + y, filter(perfect_number, range(1, 1001))))
+
+
+'''
+Gayet guzel, tebrikler.
+'''
