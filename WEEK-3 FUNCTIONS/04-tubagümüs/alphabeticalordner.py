@@ -7,11 +7,9 @@
 #alphabetical_order.py
 #Write a function that takes an input of different words with hyphen (-) in between them and then:
 #sorts the words in alphabetical order, adds hyphen icon (-) between them, gives the output of the sorted words.
-#Example:
+#example:
 #Input >>> green-red-yellow-black-white
 #Output >>> black-green-red-white-yellow
-
-
 
 def regulator():     #creating a function
     mywords = input("write your words with '-' :\n")  #creating a word group
@@ -20,4 +18,4 @@ def regulator():     #creating a function
     #split between words with (-) 
     return print(mywords)
 
-print(regulator())
+regulator()
