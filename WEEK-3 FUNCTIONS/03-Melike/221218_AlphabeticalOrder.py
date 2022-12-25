@@ -14,3 +14,8 @@ def alphabetical_order(words):
     print (words3)
 
 alphabetical_order("green-red-yellow-black-white")
+
+"""
+Gayet guzel. 
+Bunu kullanicidan input alarak gelen girdileri kullanarak tekrar duzenleyelim.
+"""

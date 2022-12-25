@@ -11,3 +11,14 @@ words_list.sort()
 def alphabetical_order(words):
     return '-'.join(words)
 print(alphabetical_order(words_list))
+
+"""
+Mukemmel, tebrikler.
+
+Fonksiyon disindaki split ve sort islemlerini de fonksiyon icinde tanimlayalim.
+
+Global ve local degiskenlere dikkat edelim!
+Fonksiyon disi 'global', fonksiyon ici 'local' degisken.
+Fonksiyon icindeki words yerel degiskeninin adini degistirip baska bir ad ile yazalim,
+su an icin bir sorun olmasa da bu kullanima dikkat edelim.
+"""

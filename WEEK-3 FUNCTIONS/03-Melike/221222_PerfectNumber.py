@@ -26,3 +26,7 @@ def perfect_list(a, b):
     return sum_list
 
 print(perfect_list(1,1000))
+
+'''
+Gayet guzel, perfect numbers listesini de yazdirabilirsiniz.
+'''

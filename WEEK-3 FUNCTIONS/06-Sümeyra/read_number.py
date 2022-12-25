@@ -12,7 +12,11 @@ def read_number():
     if int(number[0]) == 1:
         print(tens[int(number[1])])
 
-    else: #from 20 to 99 not have a special name.First part is first number, second part is second number
+    else:  # from 20 to 99 not have a special name.First part is first number, second part is second number
         print(tens_digit[int(number[0])],ones_digit[int(number[1])])
         
 read_number()
+
+'''
+Gayet basarili, tebrikler.
+'''
