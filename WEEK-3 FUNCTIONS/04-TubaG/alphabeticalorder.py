@@ -16,10 +16,10 @@ def regulator():     #creating a function
     mywords = sorted(mywords.split('-')) 
     # sorting the listalphabetically with the sorted command
     #split between words with (-) 
-    return print(mywords) 
-    '''buradan liste donuyor. join() ile string dondurelim. '-'.join(mywords)
+    
+    # return print(mywords) 
+    '''buradan liste donuyor. join() ile string dondurelim. '-'.join(mywords)'''
     return print('-'.join(mywords))
     
-    '''
-   
+
 regulator()
