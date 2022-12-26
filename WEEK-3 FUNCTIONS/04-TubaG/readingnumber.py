@@ -23,7 +23,7 @@ def reading_number (n):
 
     else:
     
-       print(tens_digit[tens], ones_digit[ones]) #creating and printing  digits
+       print(tens_digit[tens+1], ones_digit[ones]) #creating and printing  digits
 
 new_number= int(input("write a number:\n"))
 reading_number(new_number)
