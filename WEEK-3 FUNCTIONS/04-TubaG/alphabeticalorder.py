@@ -17,6 +17,9 @@ def regulator():     #creating a function
     # sorting the listalphabetically with the sorted command
     #split between words with (-) 
     return print(mywords) 
-    '''buradan liste donuyor. join() ile string dondurelim. '-'.join(mywords)'''
-
+    '''buradan liste donuyor. join() ile string dondurelim. '-'.join(mywords)
+    return print('-'.join(mywords))
+    
+    '''
+   
 regulator()
