@@ -16,8 +16,7 @@ reverse(string)
 
 """
 Gayet guzel, basarili. 
-Stringi tersten okutmak icin for dongusune de ihtiyacimiz yok aslinda,
-soyle guzel bir cozum gordum onu paylasayim.
+
 """
 
 '''
