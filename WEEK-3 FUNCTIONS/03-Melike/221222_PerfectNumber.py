@@ -28,7 +28,7 @@ def perfect_list(a, b):
 print(perfect_list(1,1000))
 
 '''
-Gayet guzel, perfect numbers listesini de yazdirabilirsiniz.
+Gayet guzel.
 
 Bir de 
 return sum_num == num
