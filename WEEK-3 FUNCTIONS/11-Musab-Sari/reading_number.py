@@ -13,7 +13,7 @@ two_digit_numbers = ['Twenty','Thirty','Fourty','Fifty','Sixty','Seventy','Eight
 
 def reading_number(x):
     try:
-        x is range(0,99)
+        x is range(0,99)  # Burda 'is' kullanma amacini aciklar misin?
         
         if x in range(0,20):
             print(x,'------>',one_to_nineteen[x])
@@ -31,3 +31,11 @@ def reading_number(x):
         print('Your number is out of range!')
 
 reading_number(a)
+
+'''
+is kullanma amacini anlayamadim, bana neden kullandigini aciklar misin?
+
+hata durumunda except satirini dondurmen guzel fikir, try-except kullanimi guzel olmus.
+
+fonksiyon basarili calisiyor..
+'''
