@@ -29,4 +29,8 @@ print(perfect_list(1,1000))
 
 '''
 Gayet guzel, perfect numbers listesini de yazdirabilirsiniz.
+
+Bir de 
+return sum_num == num
+seklinde kurudugumuzda, bize True ya da False dondurecektir. If-Else dongusu kurmamiza gerek kalmadan da yapabiliriz.
 '''
