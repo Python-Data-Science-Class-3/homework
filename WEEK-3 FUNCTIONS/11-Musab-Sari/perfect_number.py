@@ -66,13 +66,8 @@ Daha sonrasinda filter ile 1000'e kadar olan sayilari bu fonksiyon ile tarayip,
 True olanlari dondurebiliriz. Reduce metodu ile de toplama yapabiliriz.
 
 Bir ornek paylasiyorum, kolay gelsin.
-
-
-
-
-
-
 """
+
 
 """
 from functools import reduce
