@@ -22,6 +22,12 @@ def gist(caption):
     else:
         return False        
 
+<<<<<<< Updated upstream
+=======
+sumPerfect = filter(lambda sayi: gist(sayi)== True, range(1,1000))
+print("sum of perfect numbers between 1 to 1000: ",sum(list(sumPerfect))) #guzel olmus evet.
+
+>>>>>>> Stashed changes
 
 sumPerfect = filter(lambda sayi: gist(sayi)== True, range(1,1000))
 listPerfect = list(sumPerfect)
