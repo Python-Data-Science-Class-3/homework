@@ -30,7 +30,6 @@ new_list = filter(lambda x: x<1000, k)
 print('\nThe sum of perfect numbers in the range of 1000 is:', reduce(lambda x,y:x+y, new_list))
 print('\nIf your range is lower than 1000 then you will see the sum up to your range!')
 
-
 """
 program basarili calisiyor,
 istenen sonucu veriyor,
@@ -68,7 +67,6 @@ True olanlari dondurebiliriz. Reduce metodu ile de toplama yapabiliriz.
 Bir ornek paylasiyorum, kolay gelsin.
 """
 
-
 """
 from functools import reduce
 
@@ -84,4 +82,5 @@ def perfect_number(num):
 # perf_nums_list = list(filter(perfect_number, range(1, 1001)))
 sum_perf_list = reduce(lambda x, y: x+y, perf_nums_list)
 print(sum_perf_list)
+ok
 """

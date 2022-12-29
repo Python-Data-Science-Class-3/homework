@@ -46,5 +46,5 @@ def alphabetical_order(x):  # burda x argumani olarak inputtan gelen stringi fon
     print(x)
 
 alphabetical_order(inp)  # fonksiyonu inputumuz ile cagiriyoruz
-
+ok
 """

@@ -35,4 +35,5 @@ Yani fonksiyona giren veri tipi String, fonksiyondan cikan veri tipi Liste sekli
 Bizden istenmemis ama sorted() ile siralayarak daha guzel bir sunum da yapabiliriz. 
 
 Gayet guzel, tebrikler..
+ok
 """

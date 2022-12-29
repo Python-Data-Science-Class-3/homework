@@ -38,4 +38,5 @@ is kullanma amacini anlayamadim, bana neden kullandigini aciklar misin?
 hata durumunda except satirini dondurmen guzel fikir, try-except kullanimi guzel olmus.
 
 fonksiyon basarili calisiyor..
+ok
 '''

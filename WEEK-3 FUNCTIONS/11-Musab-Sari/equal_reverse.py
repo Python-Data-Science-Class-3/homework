@@ -28,7 +28,6 @@ yanlis degerlendirmemizi onler
 
 """
 
-
 """
 inp = input('Please enter your words which are going to be checked if they are equal to their reverse with a coma in between them:')
 
@@ -39,4 +38,5 @@ splitted = inp.split(',')  # split bize stringleri liste olarak donduruyor
 reverse_order = lambda x: [print(x[i][:]==x[i][::-1]) for i in range(len(x))]  # Zaten True-False dondurecegimiz if satiri kurmadan, direk bu sekilde yazarsak bize True-False olarak donecektir.
 
 reverse_order(splitted)
+ok
 """
