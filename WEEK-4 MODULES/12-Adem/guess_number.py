@@ -24,6 +24,7 @@ start = time.time()
 number_guess = 0
 #The game starts and the first choice is requested. The program cycle continues.
 
+# For loops
 while True:
     select_guess= int(input("Enter your guessed number"))
 

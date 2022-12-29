@@ -47,7 +47,7 @@ while True:
         except ValueError:
             print("Invalid input. Please enter a valid number. \U0001f44a")
             continue
-        
+# Call the function        
     if choice == 1:
         print(math.ceil(add(num1,num2)))
 

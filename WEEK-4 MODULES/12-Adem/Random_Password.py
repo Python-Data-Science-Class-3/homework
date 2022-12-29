@@ -19,12 +19,13 @@ b_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 numbers = "1234567890"
 s_char = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 liste = random.sample(s_char,2)+random.sample(alphabet,4)+random.sample(b_alphabet,2)+random.sample(numbers,2)
-def göster():
+
+def show_result():
     label.config(text = liste,fg="white", bg="red")
 
 label= tk.Label(form,fg="yellow", bg="blue",font = "Arial 30 italic bold")
 label.pack()
-göster=tk.Button(form,text = "Click for Password", fg="black", bg="yellow",font = "Times 30 italic bold", command=göster)
-göster.pack()
+result=tk.Button(form,text = "Click for Password", fg="black", bg="yellow",font = "Times 30 italic bold", command=show_result)
+show_result.pack()
 
 form.mainloop()

@@ -24,6 +24,7 @@ c = input("Enter the third number: ")
 d = input("Enter the fourth number: ")
 
 # Verify that the input is a valid number
+#For control numbers
 try:
     a = int(a)
     b = int(b)
