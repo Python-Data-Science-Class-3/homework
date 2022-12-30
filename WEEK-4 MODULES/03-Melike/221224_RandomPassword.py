@@ -14,6 +14,11 @@ The result should be display on the password label when the user click the gener
 (use import random, string and tkinter)
 """
 
+### It always seems to return the same password everytime we try a new round
+### The password moves outside the table, can you fix that too?
+### You can use the "string" module to pull all characters
+
+
 import random
 from tkinter import *
 

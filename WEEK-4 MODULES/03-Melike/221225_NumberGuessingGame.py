@@ -36,3 +36,7 @@ while True:
 
     except (TypeError, ValueError) :
         print("Error occured.. Change the values you entered..")
+
+### When an incorrect value is entered, it exits the loop and starts over.
+### Let's fix it so that it stays in the loop and continues from where it left off.
+### Tip: You can use try-except block in the second while loop, then the problem will be cleared.

@@ -13,6 +13,9 @@ Using if/elif statements for cases and call the appropriate functions.
 Use try/except blocks to verify input entries and warn the user for incorrect inputs. 
 Ask user if calculate numbers again. To implement this, take the input from user Y or N. (use import sys, ceil function in math)"""
 
+
+### Goed gedaan!
+
 from math import ceil
 #import sys
 
