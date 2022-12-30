@@ -10,6 +10,7 @@
 #  Use try/except blocks to verify input entries and warn the user for incorrect inputs. 
 # Ask user if calculate numbers again. To implement this, take the input from user Y or N. (use import sys, ceil function in math)
 
+### 'except ValueError:' line does not work. The program stops when an incorrect value is entered. Can we fix it?
 
 import sys
 import math as m
