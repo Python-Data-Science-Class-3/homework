@@ -25,3 +25,4 @@ while True:
         print("Error occured.. Please enter a number..")
 
 ### Good done!
+### But it's allowed to use gcd method, not lcm. Could you use gcd method in place of lcm? Create a self lcm funtion if you want, it's allowed.
