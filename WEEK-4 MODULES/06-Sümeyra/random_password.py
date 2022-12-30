@@ -11,7 +11,10 @@
 
 
 import string,random
-import tkinter as t
+import tkinter as t  
+### It's common to use "tk" in place of "t" while we import, 
+### so that's better to use "tk" when we import "tkinter". 
+### Please change "t" with "tk" in your code.
 
 def random_password():
     length = 10 #password length
