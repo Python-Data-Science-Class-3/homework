@@ -1,8 +1,8 @@
-#As a user, I want to use a program which can calculate basic mathematical operations. 
+# As a user, I want to use a program which can calculate basic mathematical operations. 
 # So that I can add, subtract, multiply or divide my inputs.
 
-#Acceptance Criteria:
-#The calculator must support the Addition, Subtraction, Multiplication and Division operations. D
+# Acceptance Criteria:
+# The calculator must support the Addition, Subtraction, Multiplication and Division operations. D
 # efine four functions in four files for each of them, with two float numbers as parameters. 
 # To calculate the answer, use math.ceil() and get the next integer value greater than the result 
 # Create a menu using the print command with the respective options and take an input choice from the user. 
