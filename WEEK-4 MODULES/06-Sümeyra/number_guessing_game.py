@@ -1,70 +1,69 @@
-#As a user, I want to use a program which can calculate basic mathematical operations. 
-# So that I can add, subtract, multiply or divide my inputs.
+#As a player, I want to play a game which I can guess a number the computer chooses in the range I chose. 
+#So that I can try to find the correct number which was selected by computer.
 
 #Acceptance Criteria:
-#The calculator must support the Addition, Subtraction, Multiplication and Division operations. D
-# efine four functions in four files for each of them, with two float numbers as parameters. 
-# To calculate the answer, use math.ceil() and get the next integer value greater than the result 
-# Create a menu using the print command with the respective options and take an input choice from the user. 
-# Using if/elif statements for cases and call the appropriate functions.
-#  Use try/except blocks to verify input entries and warn the user for incorrect inputs. 
-# Ask user if calculate numbers again. To implement this, take the input from user Y or N. (use import sys, ceil function in math)
+#Computer must randomly pick an integer from user selected a range, i.e., from A to B, where A and B belong to Integer. 
+#Your program should prompt the user for guesses if the user guesses incorrectly, it should print whether the guess is too high or too low. 
+#If the user guesses correctly, the program should print total time and total number of guesses. 
+#You must import some required modules or packages You can assume that the user will enter valid input. (use import random and time)
 
 
-import sys
-import math as m
+from random import randint
+import time
+start=time.time()
 
-def calculate():
-    operation = input('''
-Please type in the math operation you would like to complete:   
-+ for addition
-- for subtraction
-* for multiplication
-/ for division
-''')
+print("***Welcome To Number Guessing Game***")
 
-    number_1 = float(input('Please enter the first number: '))
-    number_2 = float(input('Please enter the second number: '))
-    try:
-         if operation == '+':
-            print('{} + {} = '.format(number_1, number_2))
-            print(m.ceil(number_1 + number_2))
-
-         elif operation == '-':
-            print('{} - {} = '.format(number_1, number_2))
-            print(m.ceil(number_1 - number_2))
-
-         elif operation == '*':
-            print('{} * {} = '.format(number_1, number_2))
-            print(m.ceil(number_1 * number_2))
-
-         elif operation == '/':
-            print('{} / {} = '.format(number_1, number_2))
-            print(m.ceil(number_1 / number_2))
-
-         else:
-            print("You have not typed a valid operator, please run the program again.")
-
-    except ValueError:
-        print("Please enter a number:")
-        
-    except ZeroDivisionError:
-        print(f"Second number = 0\n{number_1} can't be divided by zero\nPlease enter a different number:")
-
-    # Add again() function to calculate() function
-    again()
-
-def again():
-    calc_again = input('''
-Do you want to calculate again?
-Please type Y for YES or N for NO.
-''')
-
-    if calc_again.upper() == 'Y':
-        calculate()
-    elif calc_again.upper() == 'N':
-        print("Okay,bye!")
+rand=randint(7, 77) #number range to choose
+count=0  #the counter that will increase with each wrong guess
+while True:
+    count+=1
+    number=int(input("Please enter a number:"))
+    if (number<rand):
+       print("Your guess is too low.")
+       continue
+    elif (number>rand):
+       print("Your guess is too high.") 
+       continue
     else:
-        again()
+        print("Randomly chosen number{0}:".format(rand))
+        print("Your guess count: {0}".format(count))
 
-calculate()
+    finish=time.time()
+    print("Your total game time:",finish-start)
+
+ #As a player, I want to play a game which I can guess a number the computer chooses in the range I chose. 
+#So that I can try to find the correct number which was selected by computer.
+
+#Acceptance Criteria:
+#Computer must randomly pick an integer from user selected a range, i.e., from A to B, where A and B belong to Integer. 
+#Your program should prompt the user for guesses if the user guesses incorrectly, it should print whether the guess is too high or too low. 
+#If the user guesses correctly, the program should print total time and total number of guesses. 
+#You must import some required modules or packages You can assume that the user will enter valid input. (use import random and time)
+
+
+from random import randint
+import time
+start=time.time()
+
+print("***Welcome To Number Guessing Game***")
+
+rand=randint(7, 77) #number range to choose
+count=0  #the counter that will increase with each wrong guess
+while True:
+    count+=1
+    number=int(input("Please enter a number:"))
+    if (number<rand):
+       print("Your guess is too low.")
+       continue
+    elif (number>rand):
+       print("Your guess is too high.") 
+       continue
+    else:
+        print("Randomly chosen number{0}:".format(rand))
+        print("Your guess count: {0}".format(count))
+
+    finish=time.time()
+    print("Your total game time:",finish-start)
+
+ 
