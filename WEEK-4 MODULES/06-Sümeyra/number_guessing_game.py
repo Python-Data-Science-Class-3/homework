@@ -33,5 +33,6 @@ while True:
     print("Your total game time:",finish-start)
 
 ### Good done!
+### The range should be selected from the user. Can you fix this?
 
  
