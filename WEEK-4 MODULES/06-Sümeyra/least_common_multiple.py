@@ -14,9 +14,6 @@ def Lcm(x,y,z,t): #define a function,we find lcm using gcd
 ### Please don't use capital letters as long as not required. 
 ### Let's replace 'Lcm' with 'lcm'.
 
-### what do you mean with these lines? Can you explain?
-### Should we write self an algorithma, of may we use math.gcd?
-### Could you please try to write an algorithma to find the least common multiple?
 
     L1=int((x*y)/gcd(x,y))
     L2=int((z*t)/gcd(z,t))
