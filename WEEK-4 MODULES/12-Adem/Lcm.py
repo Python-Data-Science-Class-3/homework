@@ -24,7 +24,7 @@ c = input("Enter the third number: ")
 d = input("Enter the fourth number: ")
 
 # Verify that the input is a valid number
-#For control numbers
+# For control numbers
 try:
     a = int(a)
     b = int(b)
@@ -36,3 +36,14 @@ except ValueError:
 # We call the function we defined and calculate the lcm of the 4 numbers entered.
 lcm = calculate_lcm(a, b, c, d)
 print("The LCM of the four numbers is:", lcm)
+
+
+### Use try/except blocks to verify input entries and warn the user for Nan or non numerical inputs.
+### When I try to make an input of the wrong type, it returns the following error and stops.
+
+"""
+Invalid input. Please enter a valid number.
+Traceback (most recent call last):
+...
+TypeError: 'str' object cannot be interpreted as an integer
+"""

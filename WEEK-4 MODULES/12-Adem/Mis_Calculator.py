@@ -70,3 +70,6 @@ while True:
     else:
         print("See you in other programs \U0001f44b")
         sys.exit()
+
+### For the first input, we can avoid the error with try-except when an incorrect value is entered.
+### Let's fix it, then resend.
