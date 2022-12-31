@@ -29,3 +29,10 @@ result=tk.Button(form,text = "Click for Password", fg="black", bg="yellow",font 
 show_result.pack()
 
 form.mainloop()
+
+### I couldn't run the program.
+### Traceback (most recent call last):
+### File "d:\workspace\mentor\WEEK-4 MODULES\12-Adem\Random_Password.py", line 29, in <module>
+### show_result.pack()
+### AttributeError: 'function' object has no attribute 'pack'
+### Let's evaluate the error code, fix it again and resend it.

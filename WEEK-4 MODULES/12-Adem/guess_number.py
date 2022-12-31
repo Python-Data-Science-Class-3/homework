@@ -44,3 +44,7 @@ done= time.time()
 #Subtracting start time from end time
 total_time = done - start
 print(f"You guessed the correct number in {number_guess} guesses and {total_time:.2f} seconds!")
+
+### It's a good thing there are emojis, otherwise I wouldn't have figured it out!
+### I think the increase and decrease instructions need to be switched.
+### 😳 👍 👏
