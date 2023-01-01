@@ -13,7 +13,7 @@ num1, num2, num3, num4=[int(a) for a in input("Please write 4  numbers:  ").spli
 
 try:
     print(f"GCD is {math.gcd(num1,num2,num3,num4)}")                        #using gcd function from math modul
-    print (f"LCM is {math.lcm(num1,num2,num3,num4)}")                       #using lcm function from math modul
+    print (f"LCM is {(num1*num2*num3*num4)/math.gcd(num1,num2,num3,num4)}")    #using gcd function for calculating lcm
     
 except (TypeError, ValueError):                                             #for error using except.
     print("Opps !! an Error. Please input new numbers")
