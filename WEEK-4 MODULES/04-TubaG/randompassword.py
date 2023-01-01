@@ -13,49 +13,50 @@
 
 #Password length must be 10 characters long. #
 # It must contain at least 2 upper case letter, 2 digits and 2 special symbols.
-# # You must import some required modules or packages. 
-# #The GUI of program must contain at least a button and a label. 
+#  You must import some required modules or packages. 
+# The GUI of program must contain at least a button and a label. 
 # The result should be display on the password label when the user click the generate button. 
 #(use import random, string and tkinter)
 
-import  string as s 
-
-#print(s.ascii_letters)
-print(s.ascii_lowercase)
-print(s.ascii_uppercase)
-print(s.digits)
-print(s.punctuation)
-
-import random as r
-
-password =str(s.digits+ s.ascii_letters + s.punctuation)
-#password = s.digits + s.ascii_letters + s.punctuation
-#password = r.sample(list((s.ascii_lowercase,2) +(s.ascii_uppercase,4)+ (s.digits,2)+(s.punctuation,2)))
-
-print("".join(r.sample(password, 10)))
-
-
-from tkinter import *
+from tkinter import *       #tkinter,,string, ramdom importing
 from tkinter import ttk
+import  string as s 
+import random as r
+from random import randint
 
 
+def random_password():    #function definitionn for printing password in tkinter
+       pass
+       
+ # determinig password characters and creating random password     
+       characters = r.sample(s.digits,2)+ r.sample(s.punctuation,2)+r.sample(s.ascii_uppercase,2)+r.sample(s.ascii_letters,4)
+       password = "".join(r.sample(characters,10))  #for x in range (randint(10)) )
+       print(password)
+       tag.config(text=password)     #transferring the password output to GUI
+  
+#program GUI and steps to create Button and Label   
 window = Tk()
-window.title( "infotechakademia_Datascience")
-window.geometry("400x450")
-window.config(bg= "pink")
+window.title("infotechakademia_Datascience_Login")
+#window.geometry("600*400")
+window.config(bg="pink")
+key_application = Frame(window)
+key_application.pack()
 
 tag = Label(window)
-tag =Label(window, text ="write password",bg ="pink", font = "arial 20",width = 30, height = 20)
-tag.pack
-
-entry = Entry(window)
-entry.place(x=30, y=30)
+tag.config(text="Welcome,Please push the Botton",font = "arial 12")
+tag.pack(padx= 90, pady= 30)
 
 
-button1 = Button(window, text = "sign in", bg="black")
+tag_1 = Label(window)
+tag_1.config(text ="Password:" )
+tag_1.pack()
+
+
+button1 =Button(window,text="RANDOM PASSWORD", bg= "purple", command=random_password)
 button1.pack()
-button2 = Button(window, text ="Sign out", command =window.destroy)
-button2.pack(pady =50)
 
 
-window.mainloop()
+button2 = Button(window,text="Sign out", command= window.destroy) #Password exit button
+button2.pack(pady= 40)
+
+mainloop()
