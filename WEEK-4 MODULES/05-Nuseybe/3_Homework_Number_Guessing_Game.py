@@ -20,7 +20,7 @@ start = time.time()														# time is starting
 x = random.randint(lower, upper)										# a nummber is randomly selecting by computer
 count = 0
 
-for x in range(lower,upper):							
+while True:							
 	count += 1
 
 	
