@@ -10,4 +10,6 @@ def find_div(a):
 def perfect_numbers(i,j): 
     return [a for a in range(i,j+1) if sum(find_div(a)) == a]           # find the perfect numbers between two numbers
 
+
 print("These are perfect number 1 till 1000: ", perfect_numbers(1, 1000))   #printing the perfect numbers which is perfect_numbers function find are
+print("This is sum of perfect numbers which are 1 till 1000 : ", sum(perfect_numbers(1,1000)))  #printing the sum of perfect numbers which is 1 till 1000
