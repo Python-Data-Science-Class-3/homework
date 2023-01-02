@@ -15,33 +15,13 @@ Using if/elif statements for cases and call the appropriate functions. Use try/e
   (use import sys, ceil function in math)
 """
 import sys
-import math
 import os
-
-
-
-def sum(a: float, b:float):
-    print ("Addition (a+b) is : ", math.ceil(a+b))
-        
-    Areyousure()
-    
-
-
-def subt(a: float, b:float):
-    print ("Subtraction (a-b) is : ", math.ceil(a-b))
-    
-    Areyousure()
-
-def division(a: float, b:float):
-    print (" Division (a/b) is : ", math.ceil(a/b))
-    
-    Areyousure()
-
-
-def multiplication(a: float, b:float):
-    print ("multiplication (a*b) is : ", math.ceil(a*b))
-    Areyousure()  
-
+import math
+from Add import *
+from subtraction import *
+from multiplication import *
+from division import *
+# from Areyousure import *
 
 
 def Areyousure():
@@ -54,13 +34,20 @@ def Areyousure():
             print("Select operation.")
             menu()
         if offer.upper()== "N": 
-            sys.exit() 
+            sys.exit()    # or break you can  use
+
+
 
 
 def menu():
 
     while True:
-        calculatorMenu = int (input("\n1. Sum \n 2.subtraction\n 3.division\n 4.multiplication\n5. Exit \n choes (1 - 5 )\n "))
+        calculatorMenu = int(input("\n1. Sum \
+                                     \n 2.subtraction\
+                                     \n 3.division\
+                                     \n 4.multiplication\
+                                     \n5. Exit \
+                                     \n choes (1 - 5 )\n "))
         
         if calculatorMenu == 5 :
           print(" Exit process ")
@@ -69,32 +56,34 @@ def menu():
         
         try:
             num1= float(input("enter first nummer : "))
-            if (isinstance(num1, float)):
+            #Is the value we get with the input a float? is not it? we check.
+            if (isinstance(num1, float)):   
                 num2= float(input("enter second nummer : "))
+
                 if (isinstance(num2, float)):
                     
                     if calculatorMenu == 1 :
                         print(" collection process ")
-                        sum(num1,num2)
+                        add(num1,num2)
                     elif calculatorMenu == 2 :
                         print(" subtraction process ")
                         subt(num1,num2)
                     elif calculatorMenu == 3 :
                         print(" division process ")
-                        division(num1,num2)
+                        divis(num1,num2)
                     elif calculatorMenu == 4 :
                         print(" multiplication process ")
                         multiplication(num1,num2)
+                    if calculatorMenu == 5 :
+                        print(" Exit process ")
+                        break
+
                     
 
         except ValueError:
             print("Non float value...") 
-        
-        
-        finally :
-            menu()
-             
- 
+        Areyousure()        
+
 
 
 print("Select operation.\n")
