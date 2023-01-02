@@ -30,17 +30,14 @@ def myLCM():
                     print(f"{i}.th nummer is  {n[(i-1)]} ")
             
             mylcb= math.gcd(n[0],n[1],n[2],n[3])
-            os.system("sls")
-            print(f" The Least Common Multiple is {mylcb}")
+            os.system("cls")
+            print(f" The Least Common Multiple is {mylcb}\n")
             break
 
         except ValueError:
             print("The expression you entered must be a number(int) !")
             myLCM()
-        finally:
-            os.system("cls")
-            print(" Warring ! Just try to do your best again\n\n ")
-            myLCM()
+        
 print("\n")
 print("\nThe least common multiple (L.C.M.) of four numbers... ")
 myLCM()
