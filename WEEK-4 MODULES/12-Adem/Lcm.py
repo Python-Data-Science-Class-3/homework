@@ -30,12 +30,13 @@ try:
     b = int(b)
     c = int(c)
     d = int(d)
-except ValueError:
-    print("Invalid input. Please enter a valid number.")
+except Exception:
+    print("Check the entered value")
 
 # We call the function we defined and calculate the lcm of the 4 numbers entered.
-lcm = calculate_lcm(a, b, c, d)
-print("The LCM of the four numbers is:", lcm)
+else:
+    lcm = calculate_lcm(a, b, c, d)
+    print("The LCM of the four numbers is:", lcm)
 
 
 ### Use try/except blocks to verify input entries and warn the user for Nan or non numerical inputs.
