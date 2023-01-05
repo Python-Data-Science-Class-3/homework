@@ -1,3 +1,19 @@
+'''Question 1:
+
+Create the class society with following information:
+society_name , house no_of_mem , flat , income
+Methods :
+1-	An init method to assign initial values of society_name , house no_of_mem , flat , income
+2-	input_date() to read information from members
+3-	allocate_flat() to allocate flat according to income using the below table.
+4-	show_data() to display the details of the entire class.
+Income	Flat
+>=25000	A Type
+>=20000 and <25000	B Type
+>=15000 and <20000	C Type
+<15000	D Type
+'''
+
 class Society():
     flat=None
     def __init__(self,society_name,house_no_of_mem,flat,income):

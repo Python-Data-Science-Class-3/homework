@@ -1,3 +1,15 @@
+'''
+Define a class named Product with the following specifications:
+Data members:
+•	product_id — A string to store product.
+•	product_name - A string to store the name of the product.
+•	product_purchase_price — A decimal to store the cost price of the product.
+•	product_sale_price —A decimal to store Sale Price Margin - A decimal to be calculated as (product_sale_price – product_purchase_price)
+•	Remarks - To store "Profit" if Margin is positive else "Loss" if Margin is negative.
+Methods :
+•	A constructor to intialize all the data members with valid default values.
+•	A method set_remarks() that assigns Margin as (product_sale_price -  product_purchase_price) and sets Remarks as mentioned below :
+'''
 class Product():     #cerate a class with name'Product'
     def __init__(self,product_id,product_name,product_purchase_price,product_sale_price):
         self.product_id=product_id

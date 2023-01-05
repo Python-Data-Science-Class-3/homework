@@ -1,3 +1,33 @@
+'''
+
+Write a Customer class and Items class. Let user enter customer information and add stuff to his/her shopping card. 
+
+Class Items : Method : __init__() ,__str__(), calculate_discount() , shopping_cart() , get_total_amount( )
+calculate_discount():
+ 	total_price = price*qty
+ 	discount—> 25% if total_price >=4000
+ 	discount   15% if total_price >=2000
+ 	discount  10% if total_price < 2000
+ 	price_tobe_paid = total_price — discount 
+shopping_cart():
+Let user add items in the shopping basket. Be creative with the items, set their prices as well.
+__str__():
+•	Print items added and total price nicely. Class Customer : Methods:__init__(), get_cust_info() this is optional, str()'
+•	Print items added and total price nicely. Class Customer : Methods: __init__() ,get_cust_info() this is optinal,str()
+Optionally create a get_cust_info() or similar to allow customer to enmter his/her information or just define them in __init__() and pass customer information as arguments while creating a customer object.
+__str__():
+Print customer information and price nicely. Find a way to link two classes. For example, instances of both classes may have a customer number. With a get method, get the customer number and pass it to the item object as an argument to set customer number attribute. So Customer class instance holds thr customer info, Items class holds the shopped item’s info fort he same customer ID number such as price ,quantity or so.
+In the end, print both info (customer info and shopped items info) using their respective __str__ format in a nice way.
+Simple example:
+Customer1 = [name : Jack, last_name : Russel, customer_id : 123] 
+Shopping_cart1 =[customer_id : 123, items : [necklace, ring, ear ring], total_price : 2000, discount : 300, price_tobe_paid : 1700 ]
+Create a few customers and print their information (Personal and shopping info).
+
+Question 5 (Optional):
+
+Could be a long term project as you may have time. Create a simple game like TicTacToe or similar (Black Jack, paperscissor-rock etc.) using Object Oriented Programming methodology.
+
+'''
 class Items():     #create an item class
     def __init__(self,item_id,item_name,qty,price,total_price,price_tobe_paid): 
         self.item_id=item_id
