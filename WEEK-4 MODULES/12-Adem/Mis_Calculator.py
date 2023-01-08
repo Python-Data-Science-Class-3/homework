@@ -23,53 +23,42 @@ def mult (num1,num2):
 def div (num1,num2):
     return num1/num2
 
-
-while True: 
 #We receive user requests
-    print("Press 1 to addition number")
-    print("Press 2 to subtraction number")
-    print("Press 3 to multiplication number")
-    print("Press 4 to divison number")
-    print("Press 5 to exit")
-
+print("Press 1 to addition number")
+print("Press 2 to subtraction number")
+print("Press 3 to multiplication number")
+print("Press 4 to divison number")
+  
 #Choose option
-    choice = int(input("Press the number of the action you want to do(1-5)"))
-    
-    if choice == '5':
-        sys.exit()
-
-    else:
-#Check if the entered value is true or false.
-        try:
-         num1 = float(input("Enter first number: "))
-         num2 = float(input("Enter second number: "))
-
-        except ValueError:
-            print("Invalid input. Please enter a valid number. \U0001f44a")
-            continue
+      
+try:
+    while True: 
+        choice = int(input("Press the number of the action you want to do(1-4)"))
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))    
+           
 # Call the function        
-    if choice == 1:
-        print(math.ceil(add(num1,num2)))
+    
+        if choice == 1:
+            print(math.ceil(add(num1,num2)))
 
-    elif choice == 2:
-        print(math.ceil(sub(num1,num2)))
+        elif choice == 2:
+            print(math.ceil(sub(num1,num2)))
 
-    elif choice == 3:
-        print(math.ceil(mult(num1,num2)))
+        elif choice == 3:
+            print(math.ceil(mult(num1,num2)))
 
-    elif choice == 4 :
-        print(math.ceil(div(num1,num2)))
+        elif choice == 4 :
+            print(math.ceil(div(num1,num2)))
 
-    else:
-        print("Invalid number")
+        else:
+            print("Invalid number")
 
-    new_transaction =input("Do you want to calculate more numbers? (Y/N) ").upper()  
+        new_transaction =input("Do you want to calculate more numbers? (Y/N) ").upper()  
 
-    if new_transaction == "Y":
-        continue
-    else:
-        print("See you in other programs \U0001f44b")
-        sys.exit()
+        if new_transaction == "N":
+            print("See you in other programs \U0001f44b")
+            sys.exit()
 
-### For the first input, we can avoid the error with try-except when an incorrect value is entered.
-### Let's fix it, then resend.
+except Exception :
+    print("Entering a number between 1 and 4 is not that difficult. Please enter a valid NUMBER.!! \U0001f44a")
