@@ -18,34 +18,34 @@ The result should be display on the password label when the user click the gener
 ### The password moves outside the table, can you fix that too?
 ### You can use the "string" module to pull all characters
 
-
 import random
+import string
 from tkinter import *
 
-a = "abcdefghijklmnopqrstuvwxyz"
-b = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-c = "1234567890"
-d = "!'+%&/()=?,.@"
-
-x = "".join(random.sample(a,4))+"".join(random.sample(b,2))+"".join(random.sample(c,2))+"".join(random.sample(d,2))
-password = "".join(random.sample(x,10))
-
-def run():
-    new_password = Label(text= f"New password is generated:\n {password}", fg="#0e4669", font= ("Monaco", 26))
-    new_password.pack()
-
 root = Tk()
-
 root.geometry("500x300")
 root.title("Random Password")
 
-myLabel = Label(root, text="PASSWORD", fg="#365deb", font= ("Monaco", 18))
-myLabel.pack(padx=20, pady=20)
+def new_password():
+    a = string.ascii_lowercase
+    b = string.ascii_uppercase
+    c = string.digits
+    d = string.punctuation
 
+    x = "".join(random.sample(a,4))+"".join(random.sample(b,2))+"".join(random.sample(c,2))+"".join(random.sample(d,2))
+    password = "".join(random.sample(x,10))
+    password_box.delete(0, END)
+    password_box.insert(0, password)
+
+my_label = Label(root, text="PASSWORD", fg="#365deb", font= ("Monaco", 18))
 second_label = Label(root, text="Welcome to the Random Password Generator!", fg="#69140e", font= ("San Francisco", 12))
+my_label.pack(padx=20, pady=20)
 second_label.pack()
 
-button = Button(root, text= "GENERATE!", fg="#345eeb", bg="#6b86e3", font= ("Menlo", 24), command=run)
+button = Button(root, text= "GENERATE!", fg="#345eeb", bg="#6b86e3", font= ("Menlo", 24), command=new_password)
 button.pack(padx=20, pady=20)
+
+password_box = Entry(root, text="", fg="#0e4669", font= ("Monaco", 26))
+password_box.pack()
 
 root.mainloop()
