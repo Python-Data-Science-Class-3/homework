@@ -59,6 +59,8 @@ class Customer():
 class Items():
     cart = []
     product_list= {"Carolina Herrera": 200, "Gucci": 220, "Versace": 250, "Prada": 280, "Tous": 170, "Burberry": 210, "Louis Vuitton": 290, "Dolce & Gabbana": 300, "JW Anderson": 220}
+    ### we should send the list after the creation of the class, not in the class. 
+    ### we can create an empty list or a cart, bur we can use them after class creation, that's the aim of OOP.
 
     def __init__(self, customer_id, items, total_price):
         self.customer_id = customer_id
@@ -138,3 +140,6 @@ item3 = Items("SK678", ["watch", "cologne", "cap", "pants"], 6700)
 Common.customer_item_info(cust1, item1)
 Common.customer_item_info(cust2, item3)
 
+### We can take the inputs from the users.
+### We didn't need to create the third class, we were able to 
+### well done
