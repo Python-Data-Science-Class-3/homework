@@ -47,7 +47,7 @@ class ScissorPapierRock:
 player1 = ScissorPapierRock(input("enter please name1 :"))       
 player2 = ScissorPapierRock(input("enter please name2 :"))          
 
-n = int(input("enter the number you want it play"))     
+n = int(input("enter the number you want it plays: "))     
         
 
 while n > 0 :
