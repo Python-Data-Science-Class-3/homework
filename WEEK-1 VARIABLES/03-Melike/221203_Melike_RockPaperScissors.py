@@ -1,3 +1,4 @@
+
 gamer_1 = input("Please input first player: ")
 gamer_2 = input("Please input second player: ")
 

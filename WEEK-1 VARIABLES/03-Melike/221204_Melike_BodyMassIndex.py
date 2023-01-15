@@ -7,8 +7,8 @@ while True:
 
     print("\nCalculating...\n")
     #height is devided by 100, since the input is in cm not meters.
-    index = weight / ((height/100)**2)
     #to take the result in type of "0,00":
+    index = weight / ((height/100)**2)
     index = round(index,2)
     print(f"Your body mass index is {index}")
 
@@ -22,3 +22,4 @@ while True:
         print("You're UNDERWEIGHT!")
     else:
         print("You're HEALTHY")
+

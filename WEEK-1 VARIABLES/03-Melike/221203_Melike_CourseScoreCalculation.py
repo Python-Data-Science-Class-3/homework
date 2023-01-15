@@ -1,4 +1,9 @@
-#Course Score Calculation
+"""Course Score Calculation
+User Name, Surname, Student Number, 4 course names, Visa and Final grades will be required. 
+The sum of 40% of the midterm grade and 60% of the final grade will give the year-end average. 
+If the average is less than 50, “FAILED” on the screen, 50 and above, “PASSED” will be printed on the screen. 
+This printing process is in 4 lessons. will be done and the lessons will be written one after the other.
+"""
 
 name = input("Name: ")
 surname = input("Surname: ")
@@ -13,6 +18,7 @@ for i in range(1,5):
     print("\n")
 
 #Year-end average is calculated by 40% of visa and 60% of final grade. The result will be in type "0,00".
+
     average = visa*40/100 + final*60/100
     average= round(average,2)
 
@@ -22,4 +28,3 @@ for i in range(1,5):
         print(f"{courses} FAILED")
     elif average >= 50:
         print(f"{courses} PASSED")
-    print("\n")
