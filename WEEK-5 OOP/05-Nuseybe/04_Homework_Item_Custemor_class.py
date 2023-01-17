@@ -26,7 +26,7 @@
 #Written by Nuseybe at 05.01.2023
 
 class Customer:                                                                 # A Class for Customer value
-    def _init_(self, name, surname, cust_id ):                  
+    def __init__(self, name, surname, cust_id ):                  
         self.name = name
         self.surname = surname
         self.cust_id = cust_id
@@ -38,7 +38,7 @@ class Customer:                                                                 
        
       
 
-    def _str_ (self):
+    def __str__ (self):
         return (f"""
         Customer Name    : {self.name}
         Customer Surname : {self.surname}
@@ -46,7 +46,7 @@ class Customer:                                                                 
         """)
    
 class Item:
-    def _init_(self, product_name, product_qty, product_price, total_price , discount , cust_id):
+    def _init_(self, product_name="", product_qty=0, product_price=0, total_price=0 , discount=0 , cust_id=0):
         self. product_name = product_name
         self.product_qty = product_qty
         self.product_price = product_price
@@ -61,13 +61,13 @@ class Item:
         Number of Product  : {self.product_qty}
         Product Price      : {self.product_price}
         Discount           : {self.discount}
-        Total Payment      : {self.total_payment}
+        Total Payment      : {self.total_pay}
        
         """)
 
     def get_total_payment(self):
-        self.total_payment= self.total_price - self.discount
-        return self.get_total_payment
+        self.total_pay= self.total_price - self.discount
+        return self.total_pay
 
     def calculate_discount(self):
         self.total_price = self.product_price * self.product_qty
@@ -94,7 +94,7 @@ class Item:
 new_customer = Customer(" "," ",0)
 new_customer.get_customer_info()
 
-new_product = Item(0,0,0,0,0,0)
+new_product = Item()
 new_product.shopping_cart(new_customer.cust_id)
 
 print(new_customer)
