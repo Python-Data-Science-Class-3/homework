@@ -9,7 +9,7 @@
 
 import re
 def find_email():
-    pattern =re.compile'([a-zA-Z0-9]+)(@)'
+    pattern =re.compile('([a-zA-Z0-9]+)(@)')
     text = 'The advencements in biomarine studies franky@google.com with the investments necessary and Davos sinatra123@yahoo.com. Then New Yorker article on wind farms...'
     match = re.findall(pattern, text)
     result = [item[0] for item in match]
