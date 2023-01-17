@@ -1,0 +1,22 @@
+#Write a program that list according to email addresses without email domains in a text.
+# Example:
+# Input: The advencements in biomarine studies franky@google.com with the investments necessary and Davos sinatra123@yahoo.com. 
+# Then New Yorker article on wind farms...
+# Output : 
+# franky
+# sinatra123
+#Written by Nuseybe at 17.01.2023
+
+import re
+def find_email():
+    pattern = '([a-zA-Z0-9]+)(@)'
+    text = 'The advencements in biomarine studies franky@google.com with the investments necessary and Davos sinatra123@yahoo.com. Then New Yorker article on wind farms...'
+    match = re.findall(pattern, text)
+    result = [item[0] for item in match]
+    if match:
+        print("Searching result is: ", result)
+    else:
+        print("No match.")
+
+find_email()
+
