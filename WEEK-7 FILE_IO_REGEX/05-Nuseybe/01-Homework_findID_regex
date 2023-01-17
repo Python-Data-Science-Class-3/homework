@@ -1,0 +1,15 @@
+#Write a program that detects the ID number hidden in a text. We know that the format of the ID number is 
+# 2 letters, 1 digit, 2 letters, 2 digits, 1 letter, 1 digit (For example: AA4ZA11B1).
+# Input : AABZA1111AEGTV5YH678MK4FM53B6 --------------------------># Output : MK4FM53B6
+# Input : AEGTV5VZ4PF94B6YH678 ----------------------------------->Output : VZ4PF94B6
+# Written by Nuseybe at 17.01.2023
+
+import re
+def id_find():
+    id_text = input('Please enter the text including the letters and digits')
+    idRegex = re.compire (r'\w\w\d\w\w\d\d\w\d')
+    for match in re.findall(idRegex, id_text.upper()):
+        print(match)
+
+
+id_find()
