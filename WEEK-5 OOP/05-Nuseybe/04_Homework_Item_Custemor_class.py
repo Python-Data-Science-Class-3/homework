@@ -46,7 +46,7 @@ class Customer:                                                                 
         """)
    
 class Item:
-    def _init_(self, product_name="", product_qty=0, product_price=0, total_price=0 , discount=0 , cust_id=0):
+    def __init__(self, product_name="", product_qty=0, product_price=0, total_price=0 , discount=0 , cust_id=0):
         self. product_name = product_name
         self.product_qty = product_qty
         self.product_price = product_price
@@ -54,7 +54,8 @@ class Item:
         self.discount = discount
         self.cust_id = cust_id
 
-    def _str_ (self):
+    def __str__ (self):
+        self.shopping_cart = []
         return (f"""
         Customer ID        : {self.cust_id}
         Product Name       : {self.product_name}
