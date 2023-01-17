@@ -7,7 +7,7 @@
 import re
 def id_find():
     id_text = input('Please enter the text including the letters and digits')
-    idRegex = re.compire (r'\w\w\d\w\w\d\d\w\d')
+    idRegex = re.compile (r'\w\w\d\w\w\d\d\w\d')
     for match in re.findall(idRegex, id_text.upper()):
         print(match)
 
