@@ -15,6 +15,7 @@ input="AABZA1111AEGTV5YH678MK4FM53B6  AEGTV5VZ4PF94B6YH678   "
 
 
 patern=r"\w{2}\d\w{2}\d\d\w\d"
+#pattern=r"[a-zA-z]{2}\d[a-zA-z]{2}\d{2}[a-zA-z]\d"
 
 a=re.findall(patern,input)
 print(a)
