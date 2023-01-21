@@ -18,5 +18,6 @@ import re
 input="The advencements in biomarine studies franky@google.com with the investments necessary and Davos sinatra123@yahoo.com. Then New Yorker article on wind farms..."
 
 pattern=r"(\w{1,}|\d)@"
+#pattern=r"(([a-zA-Z0-9.-]+)@[a-zA-z0-9-]+\.(com|edu|net))"
 a=re.findall(pattern,input)
 print(a)
