@@ -35,8 +35,6 @@ while True:
                 print("It's too low.. Try again..")
         except (TypeError, ValueError) :
             print("Error occured.. Change the values you entered..")
-
-
     
 ### When an incorrect value is entered, it exits the loop and starts over.
 ### Let's fix it so that it stays in the loop and continues from where it left off.
