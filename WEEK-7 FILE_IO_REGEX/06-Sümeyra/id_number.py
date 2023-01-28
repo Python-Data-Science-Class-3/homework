@@ -15,3 +15,5 @@ print(re.findall("\D{2}\d\D{2}\d{2}\D", text1))
 
 text2 = "AEGTV5VZ4PF94B6YH678"
 print(re.findall("\D{2}\d\D{2}\d{2}\D", text2))
+
+### Well done!!!

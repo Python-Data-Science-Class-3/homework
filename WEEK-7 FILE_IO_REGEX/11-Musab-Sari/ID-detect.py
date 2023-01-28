@@ -22,3 +22,5 @@ idnumberregex = re.compile(r'[a-zA-Z]{2}\d[a-zA-Z]{2}\d{2}[a-zA-Z]\d')
 user_input = input("Enter the text to be searched for ID number in it: ")
 
 print(idnumberregex.findall(user_input))
+
+### Good done, but we don't need to use any user input, just use two inputs given above.
