@@ -31,3 +31,7 @@ while True:
     else:
         print("It shouldn't be that hard to press C or T !!!!!")
         break
+
+### It doesn't work. If you try with the examples in the question, you can see that.
+### Please check the answers of the other team members.
+### It doesn't necessary to use a while loop, just use the 2 examples in the question, not any input.
