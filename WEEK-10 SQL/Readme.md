@@ -88,4 +88,4 @@ Asagidaki sorudan K ve C ile cozulmesini tasdikimizin cozumlerini (komüt kodlar
 
 40- En az kiralanan 5 film?
 
-41- 2006 yilinda yayinlanan ingilizce film filmlerdir?
+41- 2006 yilinda yayinlanan ingilizce filmler hangileridir?
