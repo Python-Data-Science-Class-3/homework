@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setter_window</class>
+ <widget class="QWidget" name="setter_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>36</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Time Setter</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(231, 202, 255);</string>
+  </property>
+  <widget class="QPushButton" name="setterwdw_btn_set">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>220</y>
+     <width>161</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>36</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(191, 167, 210);
+font: 36pt &quot;Comic Sans MS&quot;;</string>
+   </property>
+   <property name="text">
+    <string>SET</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="setterwdw_spinbox_seconds">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>150</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(180, 221, 246);
+font: 24pt &quot;Comic Sans MS&quot;;</string>
+   </property>
+   <property name="suffix">
+    <string> seconds</string>
+   </property>
+   <property name="maximum">
+    <number>120</number>
+   </property>
+   <property name="singleStep">
+    <number>5</number>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
