@@ -6,7 +6,7 @@ class ScissorPapierRock:
     plays = {}
     namen = []
     winner = ""
-    PlayRecord = {"rock":"👊", "papier":"✋", "scissors":"✌"}
+    PlayRecord = {"rock":"🤛", "papier":"✋", "scissors":"✌"}
 
     def __init__(self, name = ""):
         self.name = name
