@@ -13,13 +13,8 @@ api site: https://www.exchangerate-api.com/
 For example, when the user wants to learn the USD/TRY exchange rate at 15/01/2023, the result is : "1 USD is 18.7872 TRY on 15/01/2023."
 
 If you want you can use try-except to prevent the incorrect inputs.
-
-
-
-
 '''
 
-import json
 import  requests
 
 apiKey  = "284d8db72c310b3118ce2866"
@@ -36,5 +31,6 @@ url = f"https://v6.exchangerate-api.com/v6/284d8db72c310b3118ce2866/history/{cur
 
 response = requests.get(url)    #Called with get() method.
 data = response.json()           #Creating the data() variable and seeing the information with json()
-print(data['conversion_rates'])   
-print(f'Exchange Rate for {year}/{month}/{day} : 1 {currency_code} is {conversion_code}') 
+data = response.json()["conversion_rates"][conversion_code]
+
+print(f"1 {currency_code} is {data} on {day}/{month}/{year}")
