@@ -33,4 +33,4 @@ response = requests.get(url)    #Called with get() method.
 data = response.json()           #Creating the data() variable and seeing the information with json()
 data = response.json()["conversion_rates"][conversion_code]
 
-print(f"1 {currency_code} is {data} on {day}/{month}/{year}")
+print(f"1 {currency_code} is {data} {conversion_code} on {day}/{month}/{year}")
