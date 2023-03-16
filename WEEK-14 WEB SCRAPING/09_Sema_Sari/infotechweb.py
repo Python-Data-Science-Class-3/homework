@@ -14,7 +14,6 @@ class InfotechwebSpider(scrapy.Spider):
             topic = course.css('h3::text').get()
             description = course.css('p::text').get()
 
-           # week = re.sub('[^0-9]', '', week)
             week=week.strip()
             topic = topic.strip()
             description = description.strip()
@@ -24,8 +23,5 @@ class InfotechwebSpider(scrapy.Spider):
                 'topic': topic,
                 'description': description
             }
-    """def closed(self, reason):
-        data = list(self.parse(self.start_urls[0]))
-        with open('infoweek.json', 'w') as f:
-            json.dump(data, f)        
-"""
+        
+
