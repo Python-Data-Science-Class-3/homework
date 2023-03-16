@@ -22,11 +22,11 @@ class InfotechwebSpider(scrapy.Spider):
     start_urls = ["https://infotechacademy.eu/data_science"]
 
     def parse(self, response):
-       for course in response.css('div.col-lg-4.col-sm-6'):
+       for part in response.css('div.col-lg-4.col-sm-6'):
 
-            week = course.css('div.work-process-image span ::text').get()
-            topic = course.css('h3::text').get()
-            description = course.css('p::text').get()
+            week = part.css('div.work-process-image span ::text').get()
+            topic = part.css('h3::text').get()
+            description = part.css('p::text').get()
 
             week=week.strip()
             topic = topic.strip()
