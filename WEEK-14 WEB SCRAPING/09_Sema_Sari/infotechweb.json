@@ -1,0 +1,14 @@
+[
+{"week": "Week 1 - 5", "topic": "Python Programming", "description": "Make your entrance into the wonderful world of programming\n                  with Python!"},
+{"week": "Week 6 - 7", "topic": "Object-Oriented Programming", "description": "You will learn Object-oriented programming (OOP) that is a\n                  method of structuring a program by bundling related properties\n                  and behaviors into individual objects."},
+{"week": "Week 8 - 9", "topic": "GUI Programming", "description": "Combine your Python programming knowledge with your GUI design\n                  by using PYQT-5"},
+{"week": "Week 10 - 11", "topic": "Database", "description": "You will learn to store data securely and use it whenever you\n                  want. (SQL/ NonSQL)"},
+{"week": "Week 12- 13", "topic": "Web Scraping, HTTP Request and API's", "description": "You will learn to scrape information from the internet and use\n                  this information (Beautiful Soup, Selenium, Scrapy)"},
+{"week": "Week 14", "topic": "Statistics for Data Science", "description": "You will earn the basic statistical information to use when\n                  processing data."},
+{"week": "Week 15 - 17", "topic": "Exploring Data", "description": "You will learn about Exploratory Data Analysis or (EDA) that\n                  is understanding the data sets by summarizing their main\n                  characteristics often plotting them visually.(NumP, Pandas)"},
+{"week": "Week 18- 20", "topic": "Data Visualization", "description": "You will learn about Data Visualization that plays an\n                  essential role in the representation of both small and\n                  large-scale data.(Matplotlib, Plotly, Seaborn)"},
+{"week": "Week 21 - 25", "topic": "Machine Learning", "description": "Get the key element of Supervised and Unsupervised learning."},
+{"week": "Week 26", "topic": "NLP and Recomendation Systems", "description": "Learn Recommender systems (RS) that have evolved into a\n                    fundamental tool for helping users make informed decisions\n                    and choices."},
+{"week": "Week 27 - 30", "topic": "Data Science Project", "description": "Let's bring it all together: combine your forces to build a\n                    data science project!"},
+{"week": "Week 31", "topic": "GRADUATION", "description": "Collect your certification to became data scientist!"}
+]
