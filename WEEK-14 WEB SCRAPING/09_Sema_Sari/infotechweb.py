@@ -1,6 +1,5 @@
 import scrapy
-import re
-import json
+
 
 class InfotechwebSpider(scrapy.Spider):
     name = "infotechweb"
