@@ -1,0 +1,14 @@
+[
+{"Week": "Week 1 - 5", "Topic": "Python Programming", "Description": "Make your entrance into the wonderful world of programming with Python!"},
+{"Week": "Week 6 - 7", "Topic": "Object-Oriented Programming", "Description": "You will learn Object-oriented programming (OOP) that is a method of structuring a program by bundling related properties and behaviors into individual objects."},
+{"Week": "Week 8 - 9", "Topic": "GUI Programming", "Description": "Combine your Python programming knowledge with your GUI design by using PYQT-5"},
+{"Week": "Week 10 - 11", "Topic": "Database", "Description": "You will learn to store data securely and use it whenever you want. (SQL/ NonSQL)"},
+{"Week": "Week 12- 13", "Topic": "Web Scraping, HTTP Request and API's", "Description": "You will learn to scrape information from the internet and use this information (Beautiful Soup, Selenium, Scrapy)"},
+{"Week": "Week 14", "Topic": "Statistics for Data Science", "Description": "You will earn the basic statistical information to use when processing data."},
+{"Week": "Week 15 - 17", "Topic": "Exploring Data", "Description": "You will learn about Exploratory Data Analysis or (EDA) that is understanding the data sets by summarizing their main characteristics often plotting them visually.(NumP, Pandas)"},
+{"Week": "Week 18- 20", "Topic": "Data Visualization", "Description": "You will learn about Data Visualization that plays an essential role in the representation of both small and large-scale data.(Matplotlib, Plotly, Seaborn)"},
+{"Week": "Week 21 - 25", "Topic": "Machine Learning", "Description": "Get the key element of Supervised and Unsupervised learning."},
+{"Week": "Week 26", "Topic": "NLP and Recomendation Systems", "Description": "Learn Recommender systems (RS) that have evolved into a fundamental tool for helping users make informed decisions and choices."},
+{"Week": "Week 27 - 30", "Topic": "Data Science Project", "Description": "Let's bring it all together: combine your forces to build a data science project!"},
+{"Week": "Week 31", "Topic": "GRADUATION", "Description": "Collect your certification to became data scientist!"}
+]
