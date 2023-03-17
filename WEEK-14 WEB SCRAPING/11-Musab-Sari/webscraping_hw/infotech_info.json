@@ -1,0 +1,14 @@
+[
+{"Week Number": "Week 1 - 5", "Topic Name": "Python Programming", "Description": "Make your entrance into the wonderful world of programming\n                  with Python!"},
+{"Week Number": "Week 6 - 7", "Topic Name": "Object-Oriented Programming", "Description": "You will learn Object-oriented programming (OOP) that is a\n                  method of structuring a program by bundling related properties\n                  and behaviors into individual objects."},
+{"Week Number": "Week 8 - 9", "Topic Name": "GUI Programming", "Description": "Combine your Python programming knowledge with your GUI design\n                  by using PYQT-5"},
+{"Week Number": "Week 10 - 11", "Topic Name": "Database", "Description": "You will learn to store data securely and use it whenever you\n                  want. (SQL/ NonSQL)"},
+{"Week Number": "Week 12- 13", "Topic Name": "Web Scraping, HTTP Request and API's", "Description": "You will learn to scrape information from the internet and use\n                  this information (Beautiful Soup, Selenium, Scrapy)"},
+{"Week Number": "Week 14", "Topic Name": "Statistics for Data Science", "Description": "You will earn the basic statistical information to use when\n                  processing data."},
+{"Week Number": "Week 15 - 17", "Topic Name": "Exploring Data", "Description": "You will learn about Exploratory Data Analysis or (EDA) that\n                  is understanding the data sets by summarizing their main\n                  characteristics often plotting them visually.(NumP, Pandas)"},
+{"Week Number": "Week 18- 20", "Topic Name": "Data Visualization", "Description": "You will learn about Data Visualization that plays an\n                  essential role in the representation of both small and\n                  large-scale data.(Matplotlib, Plotly, Seaborn)"},
+{"Week Number": "Week 21 - 25", "Topic Name": "Machine Learning", "Description": "Get the key element of Supervised and Unsupervised learning."},
+{"Week Number": "Week 26", "Topic Name": "NLP and Recomendation Systems", "Description": "Learn Recommender systems (RS) that have evolved into a\n                    fundamental tool for helping users make informed decisions\n                    and choices."},
+{"Week Number": "Week 27 - 30", "Topic Name": "Data Science Project", "Description": "Let's bring it all together: combine your forces to build a\n                    data science project!"},
+{"Week Number": "Week 31", "Topic Name": "GRADUATION", "Description": "Collect your certification to became data scientist!"}
+]
