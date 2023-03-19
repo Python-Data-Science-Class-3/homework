@@ -1,0 +1,14 @@
+[
+{"Weeks": "Week 1 - 5", "Headings": "Python Programming", "Description": "Make your entrance into the wonderful world of programming with Python!"},
+{"Weeks": "Week 6 - 7", "Headings": "Object-Oriented Programming", "Description": "You will learn Object-oriented programming (OOP) that is a method of structuring a program by bundling related properties and behaviors into individual objects."},
+{"Weeks": "Week 8 - 9", "Headings": "GUI Programming", "Description": "Combine your Python programming knowledge with your GUI design by using PYQT-5"},
+{"Weeks": "Week 10 - 11", "Headings": "Database", "Description": "You will learn to store data securely and use it whenever you want. (SQL/ NonSQL)"},
+{"Weeks": "Week 12- 13", "Headings": "Web Scraping, HTTP Request and API's", "Description": "You will learn to scrape information from the internet and use this information (Beautiful Soup, Selenium, Scrapy)"},
+{"Weeks": "Week 14", "Headings": "Statistics for Data Science", "Description": "You will earn the basic statistical information to use when processing data."},
+{"Weeks": "Week 15 - 17", "Headings": "Exploring Data", "Description": "You will learn about Exploratory Data Analysis or (EDA) that is understanding the data sets by summarizing their main characteristics often plotting them visually.(NumP, Pandas)"},
+{"Weeks": "Week 18- 20", "Headings": "Data Visualization", "Description": "You will learn about Data Visualization that plays an essential role in the representation of both small and large-scale data.(Matplotlib, Plotly, Seaborn)"},
+{"Weeks": "Week 21 - 25", "Headings": "Machine Learning", "Description": "Get the key element of Supervised and Unsupervised learning."},
+{"Weeks": "Week 26", "Headings": "NLP and Recomendation Systems", "Description": "Learn Recommender systems (RS) that have evolved into a fundamental tool for helping users make informed decisions and choices."},
+{"Weeks": "Week 27 - 30", "Headings": "Data Science Project", "Description": "Let's bring it all together: combine your forces to build a data science project!"},
+{"Weeks": "Week 31", "Headings": "GRADUATION", "Description": "Collect your certification to became data scientist!"}
+]
