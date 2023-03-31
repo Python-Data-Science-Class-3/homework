@@ -1,0 +1,10 @@
+py -3 -m venv .venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.venv\scripts\activate
+python -m pip install --upgrade pip
+pip install scrapy
+scrapy startproject newproject     (newproject is the name of prject you will create)
+cd newproject                      (enter in new projet you have created)
+scrapy genspider new https://infotechacademy.eu/data_science (new is the name of file as new.py in directory __pycache__)
+scrapy shell https://infotechacademy.eu/data_science
+scrapy crawl new -o infotechWeb.json      
