@@ -4,13 +4,13 @@
 **Questions:**
 
 
-## DATASET:Asagidaki df'i dataset olarak kullanabilirsiniz.
+### DATASET:Asagidaki df'i dataset olarak kullanabilirsiniz.
 
 
-import numpy as np
+#### import numpy as np
 
 
-import pandas as pd
+#### import pandas as pd
 
 
 **100 ürün oluşturun**
