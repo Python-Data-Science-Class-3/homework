@@ -4,7 +4,7 @@
 **Questions:**
 
 
-DATASET:Asagidaki df'i dataset olarak kullanabilirsiniz.
+## DATASET:Asagidaki df'i dataset olarak kullanabilirsiniz.
 
 
 import numpy as np
@@ -46,7 +46,7 @@ returns = return_prob < 0.2
 df = pd.DataFrame({'Price': prices,'Urun_Degerlendirme_Oran':return_prob ,'Return': returns})
 
 
-**SORULAR
+## SORULAR
 
 
 1. Verilen bir ürünün fiyatı 50-70 aralığındaysa, ürünün geri dönüş olasılığı nedir?
@@ -58,7 +58,7 @@ df = pd.DataFrame({'Price': prices,'Urun_Degerlendirme_Oran':return_prob ,'Retur
 4. Bir ürünün fiyatı 70'den fazla olduğunda, ürün değerlendirme oranı 0.5'ten büyük olma olasılığı nedir?
 
 
-**Bayes Rule Question:
+## Bayes Rule Question:
 
 
 5. Dört şeritli bir otoyolda arabalar ya hızlı gidiyor ya da hızlı gitmiyor. Daha hızlı arabalar en sol şeritte gitmelidir. Herhangi bir zamanda, arabaların %20'si en soldaki şerittedir. Genel olarak, otoyoldaki arabaların %40'ı hızlı gidiyor olarak sınıflandırılır. Tüm arabaların içinde, en soldaki şerittekilerin %90'i hızlı gidiyor. Bir araba hızlı gidiyorsa, En Soldaki Şeritte olma olasılığı nedir?
