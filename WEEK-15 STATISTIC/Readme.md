@@ -8,7 +8,7 @@ DATASET:Asagidaki df'i dataset olarak kullanabilirsiniz.
 import numpy as np
 import pandas as pd
 
-**100 ürün oluşturun
+**100 ürün oluşturun**
 n = 100
 
 **Rastgele fiyatlar oluşturun
