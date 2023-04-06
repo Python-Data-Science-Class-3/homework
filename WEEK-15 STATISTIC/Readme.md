@@ -7,16 +7,21 @@ DATASET:Asagidaki df'i dataset olarak kullanabilirsiniz.
 
 import numpy as np
 import pandas as pd
-# 100 ürün oluşturun
+
+100 ürün oluşturun
 n = 100
-# Rastgele fiyatlar oluşturun
+
+Rastgele fiyatlar oluşturun
 prices = np.random.normal(50, 10, n)
-# Rastgele bir iade olasılığı oluşturun
+
+Rastgele bir iade olasılığı oluşturun
 return_prob = np.random.uniform(0, 1, n) #100 adet 0 ila 1 arasinda rastgele oran olusturur
-# İade edilip edilmediğini belirleyin
-#NOT: Urun degerlendirme Yuzdesinde %20 altindakilerin iade edildigi seklinde bir limit belirledik, ve datamizi simule ettik.
+
+İade edilip edilmediğini belirleyin
+NOT: Urun degerlendirme Yuzdesinde %20 altindakilerin iade edildigi seklinde bir limit belirledik, ve datamizi simule ettik.
 returns = return_prob < 0.2
-# Veri çerçevesini oluşturun
+
+Veri çerçevesini oluşturun
 df = pd.DataFrame({'Price': prices,'Urun_Degerlendirme_Oran':return_prob ,'Return': returns})
 
 
