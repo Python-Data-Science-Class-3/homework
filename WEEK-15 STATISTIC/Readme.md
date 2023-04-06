@@ -1,8 +1,6 @@
 # Class 3 Week 15 Statistic Homework
 
 """
-**Questions:**
-
 
 ### DATASET:Asagidaki df'i dataset olarak kullanabilirsiniz.
 
