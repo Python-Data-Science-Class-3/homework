@@ -1,8 +1,11 @@
 IMPORTANT
  
-1- Use the given NumPy_HomeWork.ipynb file to complete the steps. 
+1- Use the given NumPy_HomeWork.ipynb file to complete the steps.
+
 2- DO NOT CHANGE the original NumPy_HomeWork.ipynb file, but just copy and paste in your homework folder.
+
 3- Jupyter Notebook use is recommended.
+
 4- You can also find the requirement steps on this Readme.md file on your NumPy_HomeWork.ipynb notebook.
 
 
