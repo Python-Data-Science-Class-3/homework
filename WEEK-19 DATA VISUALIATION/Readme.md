@@ -15,7 +15,7 @@
 
 ## Matplotlib
 
-### 2. Kaggle'da "120 years of Olympic games" verilerini okuyun ve analiz edin.
+### Kaggle'da "120 years of Olympic games" verilerini okuyun ve analiz edin.
 
 * Year & Athlets scatter plot kullanarak cizdirin (markers veya markers+lines kullanin.)
 * Year & Athlets scatter plot kullanarak cizdirin, fakat  Summer ve Winter oyunlarini farkli renklerde ayni grafik uzerinde gosterin. 
