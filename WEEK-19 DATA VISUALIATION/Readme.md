@@ -11,7 +11,7 @@
 * Scatter plot matrisi çizdiriniz
 * Heatmap grafigi çizdiriniz
 * Çizgi grafik(çaprazlama grafikleri dahil) çizdiriniz
-* Basit zaman serisi Grafigi çizdiriniz
+
 
 ## Matplotlib
 
