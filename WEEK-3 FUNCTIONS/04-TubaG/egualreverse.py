@@ -40,6 +40,6 @@ def equal_reverse(word_list):  #creatin the function
 #palindrom words =["racecar","level", "reviver", "redder"] #inverse equal words
 #other words =["cheap","expensive", "home"]  #inverse unequal words
 
-words = (list(input("write a palindrom word:\n ").split('-')))
+words = (list(input("write a palindrom word:\n ").split(',')))
 
 print(equal_reverse(words))
