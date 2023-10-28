@@ -18,5 +18,6 @@ def unique_list(numbers):   #creating a function
         elif x not in unique_list1:
              unique_list1.append(x)
     return unique_list1
-        
+
+print(numbers)        
 print(unique_list(numbers))  
