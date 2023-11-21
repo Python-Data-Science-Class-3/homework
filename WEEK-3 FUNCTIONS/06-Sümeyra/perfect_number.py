@@ -3,6 +3,7 @@
 # Some other perfect numbers are 28(1+2+4+7+14=28), 496 and 8128.
 # Write a function that finds perfect numbers between 1 and 1000. Check perfect numbers between 1 and 1000 and find the sum of the perfect numbers using reduce and filter functions.
 
+from functools import reduce
 def perfect_number(n):  # user-defined function
    
    sum = 0
@@ -12,9 +13,10 @@ def perfect_number(n):  # user-defined function
    return sum == n
 filter1 = list(filter(perfect_number, range(1, 1000)))
 
-print("Perfect numbers between 1 and 1000:", filter1)  # calling function and print perfect numbers
+#print("Perfect numbers between 1 and 1000:", filter1)  # calling function and print perfect numbers
 
-'''
-Gayet guzel, bir de 'reduce' metodunu kullanarak bu sayilari toplayip yazdiralim.
-Bizden istenen bunu da kullanip toplamini bulmak.
-'''
+def sum(x,y):    #sum of the perfect numbers
+   return x+y
+   
+result=reduce(sum,filter1)
+print(result)
