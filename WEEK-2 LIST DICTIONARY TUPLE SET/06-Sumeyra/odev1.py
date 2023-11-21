@@ -17,7 +17,6 @@ list = [i+1 for i in range(n)]  # list, liste olustururken kullandigimiz komuttu
                                 # gibi uygun isimler kullanmaniz daha iyi olur
 print(list)
 
-x = 2  # Bu degiskeni hicbir yerde kullanmamissiniz, neden boyle bir degiskene ihtiyac duydunuz?
 for num in range(n):
    if num >= len(list)-1:  # If num is equal to the length of the list, the loop stops
       break
